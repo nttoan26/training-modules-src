@@ -213,6 +213,7 @@ services:
     container_name: tools
     volumes:
       - ${PWD}:/apps
+    working_dir: /apps
     networks:
       - confluent
     command: /bin/bash
